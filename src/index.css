@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --color-primary: #9977ff;
+  --color-primary-light: #d6c8ff;
+  --color-primary-dark: #4d11ff;
+  
+  --color-secondary: #3d83fd;
+  --color-secondary-light: #b2cdfa;
+  --color-secondary-dark: #025dfa;
+  
+  --color-success: #5afd5a;
+  --color-success-light: #c7ffc7;
+  --color-success-dark: #18f818;
+ 
+  --color-error: #fd4df7;
+  --color-error-light: #ffadfc;
+  --color-error-dark: #fc07f4;
+  
+  --color-info: #38fcd8;
+  --color-info-light: #b5fff2;
+  --color-info-dark: #02e7bd;
+  
+  --color-text: #7f7f7f;
+  --color-text-dark: #060606;
+  
+  --color-white: #ffffff;
+  --color-white-light: #f1f2f3;
+  
+  --color-black: #000000;
+
+  --bg-color-light: #f5f5f5;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
+  color: var(--color-text);
+}
+
+button.btn{
+  color: red;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #714fda;
+  --color-primary-light: #866bde;
+  --color-primary-dark: #593daf;
+
+  --color-success: #648696;
+  --color-success-light: #839faa;
+  --color-success-dark: #46606c;
+
+  --color-error: #e53b89;
+  --color-error-light: #ee75ac;
+  --color-error-dark: #b22b6a;
+
+  --color-text: #f7f8f8;
+  --color-text-light: #cacacc;
+  --color-text-dark: #ffffff;
+
+  --gradient-bg: linear-gradient(45deg, #121b1a, #1d1a2d);
+  --gradient-bg-transparet: linear-gradient(180deg, #121c1ab6, #1d1a2d79);
+  --gradient-bg-light: linear-gradient(45deg, #283334, #303541);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: middle;
+  color: var(--color-text);
+}
+
+body {
+  background: var(--gradient-bg);
+  min-height: 100vh;
+}
+
+::selection {
+  background-color: var(--color-primary-dark);
+}
+
+/* 
+sm: 576
+md: 768
+lg: 992
+xl: 1200 
+*/
+
+/* utilites  */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+  /* sm  */
+  max-width: 576px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.app {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: var(--gradient-bg-light);
+  border: 1px solid var(--color-success-dark);
+  outline: none;
+  color: #eee;
+}
+
+input:focus {
+  border-color: var(--color-success-light);
+}
+
+a {
+  color: var(--color-error);
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--color-error-light);
+}
+
+header {
+  background: var(--gradient-bg-light);
+  padding-block: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul a {
+  padding: 0.5rem;
+}
+
+#root > div {
+  min-height: calc(100vh - 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  transform: all 0.3s;
+  border-bottom: 4px solid var(--color-error-dark);
+}
+.btn:hover {
+  background-color: var(--color-primary-light);
+  border-bottom-width: 6px;
+}
+
+.btn:active {
+  background-color: var(--color-primary-dark);
+  border-bottom-width: 2px;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.books a {
+  min-width: 50vw;
+  text-align: center;
+  background: var(--gradient-bg-light);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.active {
+  color: var(--color-primary-light);
+}
